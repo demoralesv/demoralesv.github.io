@@ -8,4 +8,5 @@ body {
   background-color: var(--primaryBackground);
   color: var(--primaryFontColor);
   font-family: var(--primaryFont);
+  height: 100%;
 }
