@@ -39,6 +39,7 @@ body {
   border-color: var(--primaryBackgroundColor) !important;
   background-color: var(--primaryBackgroundColor) !important;
   color: var(--primaryFontColor);
-  outline-color: black !important; 
+  outline: none !important;
+  border: black; 
 }
 
