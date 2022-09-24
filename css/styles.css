@@ -1,12 +1,21 @@
 :root {
   --primaryBackgroundColor: black;
   --primaryFontColor: #3dff00;
-  --primaryFont:'Courier New', Courier, monospace;
+
 }
 
 body {
   background: var(--primaryBackgroundColor);
   color: var(--primaryFontColor);
-  font-family: var(--primaryFont);
+  
   height: 100%;
+}
+
+@font-face {
+  font-family: 'vt323regular';
+  src: url('vt323-regular-webfont.woff2') format('woff2'),
+       url('vt323-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
