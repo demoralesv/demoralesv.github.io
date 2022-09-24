@@ -41,7 +41,7 @@ body {
   color: var(--primaryFontColor);
 }
 
-.input-options:hover, input-options:focus {
+.input-options:hover, .input-options:focus {
     border-color: var(--primaryBackgroundColor);
     background-color: var(--primaryBackgroundColor);
     color: var(--primaryFontColor);
