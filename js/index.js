@@ -1,5 +1,5 @@
 window.onload = async () => {
-  console.log("ahora si");
+  console.log("ahora si si");
   document.getElementById("options").focus();
   const form = document.getElementById("options");
 
