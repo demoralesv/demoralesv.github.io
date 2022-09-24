@@ -1,7 +1,6 @@
 :root {
   --primaryBackgroundColor: black;
   --primaryFontColor: #3dff00;
-
 }
 
 body {
@@ -13,23 +12,37 @@ body {
 }
 
 @font-face {
-  font-family: 'vt323regular';
-  src: url('/vt323-regular-webfont.woff2') format('woff2'),
-       url('/vt323-regular-webfont.woff') format('woff');
+  font-family: "vt323regular";
+  src: url("/vt323-regular-webfont.woff2") format("woff2"),
+    url("/vt323-regular-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal;  
+  font-style: normal;
 }
-.date{
-  color:var(--primaryFontColor);
+
+.date {
+  color: var(--primaryFontColor);
   text-align: center;
   font-size: 25px;
 }
-.text-logo{
-  color:var(--primaryFontColor);
+
+.text-logo {
+  color: var(--primaryFontColor);
   text-align: center;
   font-size: 50%;
 }
-.menu{
+
+.menu {
   text-align: center;
   font-size: 25px;
+}
+.input-options {
+  border-color: var(--primaryBackgroundColor);
+  background-color: var(--primaryBackgroundColor);
+  color: var(--primaryFontColor);
+}
+
+.input-options:hover {
+    border-color: var(--primaryBackgroundColor);
+    background-color: var(--primaryBackgroundColor);
+    color: var(--primaryFontColor);
 }
