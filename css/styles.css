@@ -41,9 +41,19 @@ body {
   color: var(--primaryFontColor);
 }
 
-.input-options:hover,
-.input-options:focus,
+.input-options:hover {
+  border-color: var(--primaryBackgroundColor);
+  background-color: var(--primaryBackgroundColor);
+  color: var(--primaryFontColor);
+}
+
 .input-options:active {
+  border-color: var(--primaryBackgroundColor);
+  background-color: var(--primaryBackgroundColor);
+  color: var(--primaryFontColor);
+}
+
+.input-options:focus {
   border-color: var(--primaryBackgroundColor);
   background-color: var(--primaryBackgroundColor);
   color: var(--primaryFontColor);
