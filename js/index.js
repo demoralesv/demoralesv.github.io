@@ -1,8 +1,9 @@
 window.onload = async () => {
-  console.log("prueba");
+  console.log("ahora si");
+  document.getElementById("options").focus();
 };
 
 const preventFocus = (event) => {
   event.preventDefault();
-  event.relatedTarget.focus();
+  document.getElementById("options").focus();
 };
