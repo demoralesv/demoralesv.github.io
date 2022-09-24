@@ -1,0 +1,11 @@
+:root {
+  --primaryBackgroundColor: black;
+  --primaryFontColor: #3dff00;
+  --primaryFont:'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: var(--primaryBackground);
+  color: var(--primaryFontColor);
+  font-family: var(--primaryFont);
+}
