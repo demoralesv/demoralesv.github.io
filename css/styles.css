@@ -7,7 +7,7 @@
 body {
   background: var(--primaryBackgroundColor);
   color: var(--primaryFontColor);
-  
+  font-size: 50px;
   height: 100%;
 }
 
@@ -17,6 +17,6 @@ body {
        url('vt323-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-size: 50px;
+  
 
 }
