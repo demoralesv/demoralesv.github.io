@@ -9,6 +9,10 @@ body {
   font-size: 50px;
   height: 100%;
   font-family: "vt323regular";
+  width: 90%;
+  margin: 0 auto;
+  min-width: 900px;
+  max-width: 1200px;
 }
 
 @font-face {
