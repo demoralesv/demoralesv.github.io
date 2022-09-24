@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: var(--primaryBackground);
+  background: var(--primaryBackground);
   color: var(--primaryFontColor);
   font-family: var(--primaryFont);
   height: 100%;
