@@ -41,5 +41,6 @@ body {
   color: var(--primaryFontColor);
   outline: none !important;
   border: black; 
+  font-size: 25px;
 }
 
