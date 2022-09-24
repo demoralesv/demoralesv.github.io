@@ -35,26 +35,10 @@ body {
   text-align: center;
   font-size: 25px;
 }
-.input-options {
-  border-color: var(--primaryBackgroundColor);
-  background-color: var(--primaryBackgroundColor);
+.input-options,.input-options:hover, .input-options:active, .input-options:focus  {
+  border-color: var(--primaryBackgroundColor) !important;
+  background-color: var(--primaryBackgroundColor) !important;
   color: var(--primaryFontColor);
+  outline-color: black !important; 
 }
 
-.input-options:hover {
-  border-color: var(--primaryBackgroundColor);
-  background-color: var(--primaryBackgroundColor);
-  color: var(--primaryFontColor);
-}
-
-.input-options:active {
-  border-color: var(--primaryBackgroundColor);
-  background-color: var(--primaryBackgroundColor);
-  color: var(--primaryFontColor);
-}
-
-.input-options:focus {
-  border-color: var(--primaryBackgroundColor);
-  background-color: var(--primaryBackgroundColor);
-  color: var(--primaryFontColor);
-}
