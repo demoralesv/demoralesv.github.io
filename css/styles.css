@@ -17,8 +17,8 @@ body {
 
 @font-face {
   font-family: "vt323regular";
-  src: url("/vt323-regular-webfont.woff2") format("woff2"),
-    url("/vt323-regular-webfont.woff") format("woff");
+  src: url("vt323-regular-webfont.woff2") format("woff2"),
+        url("vt323-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -36,8 +36,13 @@ body {
 }
 
 .menu {
+  font-family: inherit;
   text-align: center;
   font-size: 25px;
+}
+.no-space{
+  margin: 0;
+  padding: 0;
 }
 .input-options,.input-options:hover, .input-options:active, .input-options:focus  {
   border-color: var(--primaryBackgroundColor) !important;
@@ -59,10 +64,16 @@ body {
    body{width: 100%;
     margin: 0 auto;
     min-width: 100px;
-    max-width: 600px;}
+    max-width: 600px;
+    
+  }
     .text-logo{
-      font-size: 30%
+      font-size: 25%
     } 
+    .menu{
+      text-align: start;
+      
+    }
  }
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
