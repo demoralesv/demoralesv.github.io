@@ -68,7 +68,16 @@ body {
   font-family: inherit;
   
 }
+div.container {
+  text-align: center;
+  font-size: 25px;
+}
 
+ul.myUL {
+  display: inline-block;
+  text-align: left;
+  list-style: none;
+}
 /*------------mobile-----------------*/
 
  /* Extra small devices (phones, 600px and down) */
@@ -87,10 +96,10 @@ body {
       
     }
    .menu p{
-  position: relative;
-  top: 10px;
-  left: 17%;
-     max-width: 300px;
+      position: relative;
+      top: 10px;
+      left: 17%;
+      max-width: 300px;
      
 }
  }
