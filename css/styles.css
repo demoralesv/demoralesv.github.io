@@ -37,8 +37,17 @@ body {
 
 .menu {
   font-family: inherit;
-  text-align: center;
+  
   font-size: 25px;
+  
+}
+.menu p{
+  position: relative;
+  top: 10px;
+  left: 40%;
+}
+.option{
+  color: #c97b15 ;
 }
 .no-space{
   margin: 0;
@@ -52,19 +61,22 @@ body {
   border: black; 
   font-size: 40px;
   font-family: inherit; 
+  max-width: 10px;
 }
 .command{
   font-size: 25px;
   font-family: inherit;
+  
 }
 
-/*mobile*/
+/*------------mobile-----------------*/
+
  /* Extra small devices (phones, 600px and down) */
  @media only screen and (max-width: 600px) {
    body{width: 100%;
     margin: 0 auto;
     min-width: 100px;
-    max-width: 600px;
+    max-width: 400px;
     
   }
     .text-logo{
@@ -74,6 +86,13 @@ body {
       text-align: start;
       
     }
+   .menu p{
+  position: relative;
+  top: 10px;
+  left: 17%;
+     max-width: 300px;
+     
+}
  }
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
