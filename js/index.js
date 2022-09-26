@@ -1,5 +1,6 @@
+const command = [];
+
 window.onload = async () => {
-  console.log("ahora si si");
   document.getElementById("options").focus();
   const form = document.getElementById("options");
 
@@ -12,3 +13,11 @@ const preventFocus = (event) => {
   event.preventDefault();
   document.getElementById("options").focus();
 };
+
+const enterCommand = (event) =>{
+  if(e.keyCode === 13){
+    e.preventDefault(); // Ensure it is only this code that runs
+
+    alert("Enter was pressed was presses");
+  }
+}
