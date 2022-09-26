@@ -45,6 +45,7 @@ body {
   border-width: thick;
 }
 .subtitle{
+  font-family: inherit;
   color: #bbbbbb;
   top: 5px;
 }
