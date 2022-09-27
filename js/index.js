@@ -1,4 +1,5 @@
 const command = [];
+let numberCommand = 0;
 
 window.onload = async () => {
   document.getElementById("options").focus();
@@ -20,7 +21,6 @@ const enterCommand = (event) => {
     command.push(document.getElementById("options").value);
     document.getElementById("options").value = "";
     if (command?.length == 5) {
-      console.log("borro")
       command.shift()
     }
     document.getElementById("container-commands").innerHTML = "";
@@ -30,6 +30,25 @@ const enterCommand = (event) => {
     });
     document.getElementById("container-commands").innerHTML +=
       '<p class="command">>><input type="text" id="options" class="input-options" onkeypress="enterCommand(event)"/></p>';
-    console.log(command);
+      document.getElementById("options").focus();
+      numberCommand = 0;
+  }
+  if(event.keyCode === 38){
+    numberCommand++;
+    if(numberCommand == (command?.length-1)){
+      numberCommand = 0;
+      document.getElementById("options").value = command[0];
+    }else{
+      document.getElementById("options").value = command[numberCommand];
+    }
+  }
+  if(event.keyCode === 40){
+    numberCommand--;
+    if(numberCommand === 0){
+      numberCommand = 4;
+      document.getElementById("options").value = command[command.length-1];
+    }else{
+      document.getElementById("options").value = command[numberCommand];
+    }
   }
 };
