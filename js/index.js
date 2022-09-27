@@ -20,9 +20,7 @@ const enterCommand = (event) => {
     command.push(document.getElementById("options").value);
     document.getElementById("options").value = "";
     if (command?.length === 5) {
-      command.filter((co, index) => {
-        return index !== 2 && co;
-      });
+      command.shift()
     }
     document.getElementById("container-commands").innerHTML = "";
     command?.map((co) => {
