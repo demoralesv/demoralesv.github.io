@@ -19,7 +19,8 @@ const enterCommand = (event) => {
     event.preventDefault(); // Ensure it is only this code that runs
     command.push(document.getElementById("options").value);
     document.getElementById("options").value = "";
-    if (command?.length === 5) {
+    if (command?.length == 5) {
+      console.log("borro")
       command.shift()
     }
     document.getElementById("container-commands").innerHTML = "";
