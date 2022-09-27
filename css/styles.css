@@ -76,7 +76,7 @@ body {
   border: black; 
   font-size: 40px;
   font-family: inherit; 
-  max-width: 10px;
+  max-width: 25%;
 }
 .command{
   font-size: 25px;
