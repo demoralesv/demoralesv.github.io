@@ -93,6 +93,16 @@ ul.myUL {
   text-align: left;
   list-style: none;
 }
+.footer{
+  text-align: center;
+  
+}
+.footer span{
+  font-size: 15px;
+  color: white;
+  background-color: #8f8d8d;
+  margin-right: 0.05em;
+}
 /*------------mobile-----------------*/
 
  /* Extra small devices (phones, 600px and down) */
