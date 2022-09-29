@@ -8,7 +8,9 @@
   <body>
     
     <div >
-      <p class="date"><span class="info"></span>Today is <script> document.write(new Date().toDateString()); </script></p>
+      <span class="info ">Nuevamente presencial</span>
+      <p class="date "><script> document.write(new Date().toDateString()); </script></p>
+      
     </div>
     <pre class="text-logo">
 _____      ___  _ ___ ___    ___ __ ___ ___ 
@@ -37,10 +39,11 @@ _____      ___  _ ___ ___    ___ __ ___ ___
       <p class="command">>><input type="text" id="options" class="input-options" onkeypress="enterCommand(event)"/></p>
   </div>
   <div class="footer">
+    
    <span >PWNED BBS</span>
    <span id="size"><script>
-    var w = window.innerWidth;
-    var h = window.innerHeight;
+    var w = window.outerWidth;
+    var h = window.outerHeight;
     
     var x = document.getElementById("size");
     x.innerHTML = w + "x" + h ;
