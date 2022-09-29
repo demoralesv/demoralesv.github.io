@@ -95,6 +95,7 @@ ul.myUL {
   text-align: left;
   list-style: none;
 }
+
 .footer{
   text-align: center;
   
@@ -128,8 +129,10 @@ ul.myUL {
       top: 10px;
       left: 17%;
       max-width: 300px;
-     
-}
+    }
+    .info{
+      font-size:15px;
+    }
  }
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
