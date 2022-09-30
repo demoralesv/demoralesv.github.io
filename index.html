@@ -39,8 +39,9 @@ _____      ___  _ ___ ___    ___ __ ___ ___
       <p class="command">>><input type="text" id="options" class="input-options" onkeypress="enterCommand(event)"/></p>
   </div>
   <div class="footer">
-    
-   <span >PWNED BBS</span>
+   
+   <span style="color: rgba(150, 31, 31, 0.562);">PWNED BBS</span>
+   <span class="footer-divisor"></span>
    <span id="size"><script>
     var w = window.outerWidth;
     var h = window.outerHeight;
@@ -48,8 +49,9 @@ _____      ___  _ ___ ___    ___ __ ___ ___
     var x = document.getElementById("size");
     x.innerHTML = w + "x" + h ;
     </script></span>
+    <span class="footer-divisor"></span>
     <span>Online</span>
-    <span><script> document.write(new Date().toLocaleTimeString()); </script></span>
+    <span class="footer-divisor"></span>
     <span><script> document.write(new Date().getHours()+ ":" +new Date().getMinutes()); </script></span>
   </div>
     <script src="js/index.js"></script>
