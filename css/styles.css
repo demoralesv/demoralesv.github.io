@@ -98,13 +98,16 @@ ul.myUL {
 
 .footer{
   text-align: center;
-  
+  font-size: 15px;
+  background-color: #8f8d8d
 }
 .footer span{
-  font-size: 15px;
+  
   color: white;
   background-color: #8f8d8d;
-  
+  border-right :solid;
+  border-width: thick;
+  border-color: gray
   /*margin-right: 0.05em;*/
 }
 /*------------mobile-----------------*/
