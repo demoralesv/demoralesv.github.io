@@ -34,7 +34,7 @@ const enterCommand = (event) => {
     numberCommand = 0;
   }
 
-  if (event.keyCode === 38) {
+  if (event.keyCode === 24) {
     console.log("sube")
     numberCommand++;
     if (numberCommand == command?.length - 1) {
@@ -45,7 +45,7 @@ const enterCommand = (event) => {
     }
   }
 
-  if (event.keyCode === 40) {
+  if (event.keyCode === 25) {
     console.log("baja")
     numberCommand--;
     if (numberCommand === 0) {
