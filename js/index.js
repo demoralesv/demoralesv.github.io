@@ -16,6 +16,7 @@ const preventFocus = (event) => {
 };
 
 const enterCommand = (event) => {
+  console.log(event.keyCode)
   if (event.keyCode === 13) {
     event.preventDefault(); // Ensure it is only this code that runs
     command.push(document.getElementById("options").value);
