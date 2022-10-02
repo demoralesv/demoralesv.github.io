@@ -30,12 +30,13 @@ const enterCommand = (event) => {
         " <p class='command'>>>" + co + "</p>";
     });
     document.getElementById("container-commands").innerHTML +=
-      '<p class="command">>><input type="text" id="options" class="input-options" onkeypress="enterCommand(event)"/></p>';
+      '<p class="command">>><input type="text" id="options" class="input-options" onkeydown="enterCommand(event)"/></p>';
     document.getElementById("options").focus();
     numberCommand = 0;
   }
+  
 
-  if (event.keyCode === 24) {
+  if (event.keyCode === 38) {
     console.log("sube")
     numberCommand++;
     if (numberCommand == command?.length - 1) {
@@ -46,7 +47,7 @@ const enterCommand = (event) => {
     }
   }
 
-  if (event.keyCode === 25) {
+  if (event.keyCode === 40) {
     console.log("baja")
     numberCommand--;
     if (numberCommand === 0) {
