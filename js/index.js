@@ -38,7 +38,7 @@ const enterCommand = (event) => {
     if (event.keyCode === 38) {
       console.log("sube");
       numberCommand++;
-      if (numberCommand == command?.length - 1) {
+      if (numberCommand >= command?.length - 1) {
         numberCommand = 0;
         document.getElementById("options").value = command[0];
       } else {
@@ -49,8 +49,8 @@ const enterCommand = (event) => {
     if (event.keyCode === 40) {
       console.log("baja");
       numberCommand--;
-      if (numberCommand === 0) {
-        numberCommand = 4;
+      if (numberCommand <= 0) {
+        numberCommand = command?.length;
         document.getElementById("options").value = command[command.length - 1];
       } else {
         document.getElementById("options").value = command[numberCommand];
