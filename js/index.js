@@ -51,7 +51,7 @@ const enterCommand = (event) => {
       numberCommand--;
       if (numberCommand <= 0) {
         numberCommand = command?.length;
-        document.getElementById("options").value = command[command.length - 1];
+        document.getElementById("options").value = "";
       } else {
         document.getElementById("options").value = command[numberCommand];
       }
