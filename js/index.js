@@ -16,9 +16,8 @@ const preventFocus = (event) => {
 };
 
 const enterCommand = (event) => {
-  console.log(event.keyCode)
   if (event.keyCode === 13) {
-    event.preventDefault(); // Ensure it is only this code that runs
+    event.preventDefault();
     command.push(document.getElementById("options").value);
     document.getElementById("options").value = "";
     if (command?.length == 5) {
@@ -34,27 +33,28 @@ const enterCommand = (event) => {
     document.getElementById("options").focus();
     numberCommand = 0;
   }
-  
 
-  if (event.keyCode === 38) {
-    console.log("sube")
-    numberCommand++;
-    if (numberCommand == command?.length - 1) {
-      numberCommand = 0;
-      document.getElementById("options").value = command[0];
-    } else {
-      document.getElementById("options").value = command[numberCommand];
+  if (command?.length > 0) {
+    if (event.keyCode === 38) {
+      console.log("sube");
+      numberCommand++;
+      if (numberCommand == command?.length - 1) {
+        numberCommand = 0;
+        document.getElementById("options").value = command[0];
+      } else {
+        document.getElementById("options").value = command[numberCommand];
+      }
     }
-  }
 
-  if (event.keyCode === 40) {
-    console.log("baja")
-    numberCommand--;
-    if (numberCommand === 0) {
-      numberCommand = 4;
-      document.getElementById("options").value = command[command.length - 1];
-    } else {
-      document.getElementById("options").value = command[numberCommand];
+    if (event.keyCode === 40) {
+      console.log("baja");
+      numberCommand--;
+      if (numberCommand === 0) {
+        numberCommand = 4;
+        document.getElementById("options").value = command[command.length - 1];
+      } else {
+        document.getElementById("options").value = command[numberCommand];
+      }
     }
   }
 };
