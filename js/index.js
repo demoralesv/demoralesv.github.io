@@ -70,14 +70,14 @@ const enterCommand = (event) => {
 */
 const displayOptiontsMenu = (option) => {
   if (page === 0) {
-    if (["A","a"].include(option)) {
+    if (["A","a"].includes(option)) {
       document.getElementById("page1").style.display = "none";
       document.getElementById("page2").style.display = "block";
       page = 1;
     }
   }
   if (page === 1) {
-    if (["M","m"].include(option)) {
+    if (["M","m"].includes(option)) {
       document.getElementById("page2").style.display = "none";
       document.getElementById("page1").style.display = "block";
       page = 0;
