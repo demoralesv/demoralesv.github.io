@@ -20,6 +20,7 @@ const enterCommand = (event) => {
   if (event.keyCode === 13) {
     event.preventDefault();
     command.push(document.getElementById("options").value);
+    displayOptiontsMenu(document.getElementById("options").value);
     document.getElementById("options").value = "";
     if (command?.length == 5) {
       command.shift();
@@ -43,7 +44,7 @@ const enterCommand = (event) => {
         numberCommand = 0;
         document.getElementById("options").value = command[0];
       } else {
-        document.getElementById("options").value = command[numberCommand-1];
+        document.getElementById("options").value = command[numberCommand - 1];
       }
     }
 
@@ -60,26 +61,24 @@ const enterCommand = (event) => {
   }
 };
 
-
 /*
 0 = menu
 1 = agenda
 2 = Contacto
 3 = Galeria
 4 = help
-*/ 
-const displayOptiontsMenu = (option) =>{
-  if(page === 0){
-    if('A'===option){
-      document.getElementById('page1').style.display = "none";
-      document.getElementById('page2').style.display = "block";
+*/
+const displayOptiontsMenu = (option) => {
+  if (page === 0) {
+    if ("A" === option) {
+      document.getElementById("page1").style.display = "none";
+      document.getElementById("page2").style.display = "block";
     }
   }
-  if(page === 1){
-    if('M'===option){
-      document.getElementById('page2').style.display = "none";
-      document.getElementById('page1').style.display = "block";
+  if (page === 1) {
+    if ("M" === option) {
+      document.getElementById("page2").style.display = "none";
+      document.getElementById("page1").style.display = "block";
     }
   }
-
-}
+};
