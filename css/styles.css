@@ -21,7 +21,7 @@ body {
 @font-face {
   font-family: "vt323regular";
   src: url("/vt323-regular-webfont.woff2") format("woff2"),
-        url("/vt323-regular-webfont.woff") format("woff");
+    url("/vt323-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -30,9 +30,8 @@ body {
   color: var(--primaryFontColor);
   text-align: right;
   font-size: 25px;
-  
 }
-.info{
+.info {
   text-align: left;
   font-size: 25px;
   float: left;
@@ -46,7 +45,7 @@ body {
   border-bottom: dotted;
   border-width: thick;
 }
-.subtitle{
+.subtitle {
   font-family: "vt323regular";
   color: #bbbbbb;
   top: 5px;
@@ -54,36 +53,36 @@ body {
 
 .menu {
   font-family: inherit;
-  
   font-size: 25px;
-  
 }
-.menu p{
+.menu p {
   position: relative;
   top: 10px;
   left: 40%;
 }
-.option{
-  color: #c97b15 ;
+.option {
+  color: #c97b15;
 }
-.no-space{
+.no-space {
   margin: 0;
   padding: 0;
 }
-.input-options,.input-options:hover, .input-options:active, .input-options:focus  {
+.input-options,
+.input-options:hover,
+.input-options:active,
+.input-options:focus {
   border-color: var(--primaryBackgroundColor) !important;
   background-color: var(--primaryBackgroundColor) !important;
   color: var(--primaryFontColor);
   outline: none !important;
-  border: black; 
+  border: black;
   font-size: 40px;
-  font-family: inherit; 
+  font-family: inherit;
   max-width: 25%;
 }
-.command{
+.command {
   font-size: 25px;
   font-family: inherit;
-  
 }
 div.container {
   text-align: center;
@@ -96,7 +95,7 @@ ul.myUL {
   list-style: none;
 }
 
-.footer{
+.footer {
   text-align: center;
   font-size: 15px;
   background-color: #8f8d8d;
@@ -105,56 +104,65 @@ ul.myUL {
   border-width: 4px;
   border-color: #8f8d8d;
 }
-.footer span{
-  
+
+.footer span {
   color: white;
   background-color: #8f8d8d;
   /*border-right :solid;
   border-width: thick;
   border-color: rgb(68, 65, 65)*/
   /*margin-right: 0.05em;*/
-  
 }
-.footer-divisor{
-  border :solid;
+
+.footer-divisor {
+  border: solid;
   border-width: 5px;
-  border-color: rgb(68, 65, 65)
+  border-color: rgb(68, 65, 65);
+}
+
+.dont-show {
+  display: none;
+}
+
+.show {
 }
 
 /*------------mobile-----------------*/
 
- /* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 600px) {
-   body{width: 100%;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
     margin: 0 auto;
     min-width: 100px;
     max-width: 600px;
-    
   }
-    .text-logo{
-      font-size: 25%
-    } 
-    .menu{
-      text-align: start;
-      
-    }
-   .menu p{
-      position: relative;
-      top: 10px;
-      left: 17%;
-      max-width: 300px;
-    }
-    
- }
+  .text-logo {
+    font-size: 25%;
+  }
+  .menu {
+    text-align: start;
+  }
+  .menu p {
+    position: relative;
+    top: 10px;
+    left: 17%;
+    max-width: 300px;
+  }
+}
 
- /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) {}
- 
- /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (min-width: 768px) {}
- 
- /* Large devices (laptops/desktops, 992px and up) */
- @media only screen and (min-width: 992px) {}
- 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {} 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

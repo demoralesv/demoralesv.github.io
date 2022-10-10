@@ -6,13 +6,16 @@
     <title>PWNED 2022</title>
   </head>
   <body>
-    
-    <div >
-      <span class="info ">Nuevamente presencial</span>
-      <p class="date "><script> document.write(new Date().toDateString()); </script></p>
-      
-    </div>
-    <pre class="text-logo">
+    <div id="page1" class="show">
+      <div>
+        <span class="info">Nuevamente presencial</span>
+        <p class="date">
+          <script>
+            document.write(new Date().toDateString());
+          </script>
+        </p>
+      </div>
+      <pre class="text-logo">
 _____      ___  _ ___ ___    ___ __ ___ ___ 
 | _ \ \    / / \| | __|   \  |_  )  \_  )_  )
 |  _/\ \/\/ /| .` | _|| |) |  / / () / / / / 
@@ -20,40 +23,87 @@ _____      ___  _ ___ ___    ___ __ ___ ___
 <p class="subtitle no-space">-M-A-I-N---S-Y-S-T-E-M---M-E-N-U-</p>                                                 
 </pre>
 
+      <!--MENU-->
 
-<!--MENU-->
-
-<div class="container">
-  <ul class="myUL">
-    <li><p class="no-space ">[<span class="no-space option">A</span>] = Agenda</p></li>
-    <li><p class="no-space ">[<span class="no-space option">C</span>] = Contacto</p></li>
-    <li><p class="no-space ">[<span class="no-space option">G</span>] = Galeria</p></li>
-    <li><p class="no-space ">[<span class="no-space option">H</span>] = Help</p></li>
-    <li></li>
-  </ul>
-</div> 
-
+      <div class="container">
+        <ul class="myUL">
+          <li>
+            <p class="no-space">
+              [<span class="no-space option">A</span>] = Agenda
+            </p>
+          </li>
+          <li>
+            <p class="no-space">
+              [<span class="no-space option">C</span>] = Contacto
+            </p>
+          </li>
+          <li>
+            <p class="no-space">
+              [<span class="no-space option">G</span>] = Galeria
+            </p>
+          </li>
+          <li>
+            <p class="no-space">
+              [<span class="no-space option">H</span>] = Help
+            </p>
+          </li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <!--page 2 Agenda-->
+    <div id="page2" class="show">
+      <p>Agenda</p>
+      <div id="cajadatos">
+        <table class="tabla" id="tabladatos">
+          <thead>
+            <td class="subtitle">Horario</td>
+            <td class="subtitle">Conferencia</td>
+            <td class="subtitle">Expositor</td>
+          </thead>
+          <tbody id="cuerpotabla">
+            <tr id="f1" class="celda">
+              <td>2 de diciembre 12 : 00 pm</td>
+              <td>Ataques Software o Malware o Firebase </td>
+              <td>Deiver Herrera</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </body>
   <footer>
     <div id="container-commands">
-      <p class="command">>><input type="text" id="options" class="input-options" onkeydown="enterCommand(event)"/></p>
-  </div>
-  <div class="footer">
-   
-   <span style="color: rgba(150, 31, 31, 0.562);">PWNED BBS</span>
-   <span class="footer-divisor"></span>
-   <span id="size"><script>
-    var w = window.outerWidth;
-    var h = window.outerHeight;
-    
-    var x = document.getElementById("size");
-    x.innerHTML = w + "x" + h ;
-    </script></span>
-    <span class="footer-divisor"></span>
-    <span>Online</span>
-    <span class="footer-divisor"></span>
-    <span><script> document.write(new Date().getHours()+ ":" +new Date().getMinutes()); </script></span>
-  </div>
+      <p class="command">
+        >><input
+          type="text"
+          id="options"
+          class="input-options"
+          onkeydown="enterCommand(event)"
+        />
+      </p>
+    </div>
+    <div class="footer">
+      <span style="color: rgba(150, 31, 31, 0.562)">PWNED BBS</span>
+      <span class="footer-divisor"></span>
+      <span id="size"
+        ><script>
+          const w = window.outerWidth;
+          const h = window.outerHeight;
+
+          let x = document.getElementById("size");
+          x.innerHTML = w + "x" + h;
+        </script></span
+      >
+      <span class="footer-divisor"></span>
+      <span>Online</span>
+      <span class="footer-divisor"></span>
+      <span
+        ><script>
+          document.write(new Date().getHours() + ":" + new Date().getMinutes());
+        </script></span
+      >
+    </div>
     <script src="js/index.js"></script>
   </footer>
 </html>
