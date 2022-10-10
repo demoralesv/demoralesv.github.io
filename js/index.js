@@ -37,19 +37,19 @@ const enterCommand = (event) => {
   }
 
   if (command?.length > 0) {
-    if (event.keyCode === 38) {
-      console.log("sube");
+    if (event.keyCode === 40) {
+      console.log("baja");
       numberCommand++;
       if (numberCommand > command?.length) {
         numberCommand = 0;
-        document.getElementById("options").value = command[0];
+        document.getElementById("options").value = command[numberCommand - 1];
       } else {
         document.getElementById("options").value = command[numberCommand - 1];
       }
     }
 
-    if (event.keyCode === 40) {
-      console.log("baja");
+    if (event.keyCode === 38) {
+      console.log("sube");
       numberCommand--;
       if (numberCommand < 0) {
         numberCommand = command?.length;
@@ -70,14 +70,14 @@ const enterCommand = (event) => {
 */
 const displayOptiontsMenu = (option) => {
   if (page === 0) {
-    if ("A" === option) {
+    if (["A","a"].include(option)) {
       document.getElementById("page1").style.display = "none";
       document.getElementById("page2").style.display = "block";
       page = 1;
     }
   }
   if (page === 1) {
-    if ("M" === option) {
+    if (["M","m"].include(option)) {
       document.getElementById("page2").style.display = "none";
       document.getElementById("page1").style.display = "block";
       page = 0;
