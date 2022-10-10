@@ -1,5 +1,6 @@
 const command = [];
 let numberCommand = 0;
+let page = 0;
 
 window.onload = async () => {
   document.getElementById("options").focus();
@@ -42,7 +43,7 @@ const enterCommand = (event) => {
         numberCommand = 0;
         document.getElementById("options").value = command[0];
       } else {
-        document.getElementById("options").value = command[numberCommand];
+        document.getElementById("options").value = command[numberCommand-1];
       }
     }
 
@@ -58,3 +59,27 @@ const enterCommand = (event) => {
     }
   }
 };
+
+
+/*
+0 = menu
+1 = agenda
+2 = Contacto
+3 = Galeria
+4 = help
+*/ 
+const displayOptiontsMenu = (option) =>{
+  if(page === 0){
+    if('A'===option){
+      document.getElementById('page1').style.display = "none";
+      document.getElementById('page2').style.display = "block";
+    }
+  }
+  if(page === 1){
+    if('M'===option){
+      document.getElementById('page2').style.display = "none";
+      document.getElementById('page1').style.display = "block";
+    }
+  }
+
+}
