@@ -40,7 +40,7 @@ const enterCommand = (event) => {
     if (event.keyCode === 38) {
       console.log("sube");
       numberCommand++;
-      if (numberCommand >= command?.length) {
+      if (numberCommand > command?.length) {
         numberCommand = 0;
         document.getElementById("options").value = command[0];
       } else {
