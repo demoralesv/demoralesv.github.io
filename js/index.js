@@ -42,7 +42,7 @@ const enterCommand = (event) => {
       numberCommand++;
       if (numberCommand > command?.length) {
         numberCommand = 0;
-        document.getElementById("options").value = command[numberCommand - 1];
+        document.getElementById("options").value = "";
       } else {
         document.getElementById("options").value = command[numberCommand - 1];
       }
@@ -52,8 +52,7 @@ const enterCommand = (event) => {
       console.log("sube");
       numberCommand--;
       if (numberCommand < 0) {
-        numberCommand = command?.length;
-        document.getElementById("options").value = "";
+        return;
       } else {
         document.getElementById("options").value = command[numberCommand];
       }
