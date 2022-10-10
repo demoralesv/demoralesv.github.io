@@ -73,12 +73,14 @@ const displayOptiontsMenu = (option) => {
     if ("A" === option) {
       document.getElementById("page1").style.display = "none";
       document.getElementById("page2").style.display = "block";
+      page = 1;
     }
   }
   if (page === 1) {
     if ("M" === option) {
       document.getElementById("page2").style.display = "none";
       document.getElementById("page1").style.display = "block";
+      page = 0;
     }
   }
 };
