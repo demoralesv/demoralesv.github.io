@@ -38,11 +38,6 @@ body {
   border: solid 1px;
 }
 
-.tabla > thead {
-  border-color: #3dff00;
-  border: solid 1px purple;
-}
-
 .info {
   text-align: left;
   font-size: 25px;
@@ -62,11 +57,6 @@ body {
   font-family: "vt323regular";
   color: #bbbbbb;
   top: 5px;
-}
-
-.celda {
-  border-color: #3dff00;
-  border: solid 1px red;
 }
 
 .menu {
