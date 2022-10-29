@@ -35,6 +35,12 @@ body {
 .tabla {
   font-size: 25px;
   border-color: #3dff00;
+  border: solid 1px;
+}
+
+.tabla > thead {
+  border-color: #3dff00;
+  border: solid 1px;
 }
 
 .info {
