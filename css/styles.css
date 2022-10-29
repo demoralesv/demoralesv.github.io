@@ -64,6 +64,11 @@ body {
   top: 5px;
 }
 
+.celda {
+  border-color: #3dff00;
+  border: solid 1px;
+}
+
 .menu {
   font-family: inherit;
   font-size: 25px;
