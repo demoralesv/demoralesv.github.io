@@ -31,6 +31,11 @@ body {
   text-align: right;
   font-size: 25px;
 }
+
+.tabla {
+  font-size: 25px;
+}
+
 .info {
   text-align: left;
   font-size: 25px;
@@ -45,6 +50,7 @@ body {
   border-bottom: dotted;
   border-width: thick;
 }
+
 .subtitle {
   font-family: "vt323regular";
   color: #bbbbbb;
@@ -60,6 +66,7 @@ body {
   top: 10px;
   left: 40%;
 }
+
 .option {
   color: #c97b15;
 }
@@ -67,6 +74,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .input-options,
 .input-options:hover,
 .input-options:active,
@@ -80,10 +88,12 @@ body {
   font-family: inherit;
   max-width: 25%;
 }
+
 .command {
   font-size: 25px;
   font-family: inherit;
 }
+
 div.container {
   text-align: center;
   font-size: 25px;
@@ -122,9 +132,6 @@ ul.myUL {
 
 .dont-show {
   display: none;
-}
-
-.show {
 }
 
 /*------------mobile-----------------*/
