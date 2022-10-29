@@ -77,6 +77,14 @@ body {
   padding: 0;
 }
 
+.optiones-table {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cajadatos {
+}
+
 .input-options,
 .input-options:hover,
 .input-options:active,
