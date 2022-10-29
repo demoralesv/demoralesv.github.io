@@ -80,9 +80,15 @@ body {
 .optiones-table {
   display: flex;
   justify-content: space-between;
+  font-size: 25px;
+  width: 100%;
 }
 
 .cajadatos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
 .input-options,
