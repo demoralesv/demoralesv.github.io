@@ -82,13 +82,13 @@ const displayOptiontsMenu = (option) => {
       document.getElementById("page1").style.display = "block";
       page = 0;
     }
-    if (["B", "b"].includes(option) && tableTalk === 0) {
+    if (["N", "n"].includes(option) && tableTalk === 0) {
       document.getElementById("optionstable").innerHTML =
         "<p><-- [B]</p>" + "<p>Día 2</p>" + "<p>[N] --></p>";
       tableTalk = 1;
     }
   }
-  if (["N", "n"].includes(option) && tableTalk === 1) {
+  if (["B", "b"].includes(option) && tableTalk === 1) {
     document.getElementById("optionstable").innerHTML =
       "<p><-- [B]</p>" + "<p>Día 1</p>" + "<p>[N] --></p>";
     tableTalk = 0;
