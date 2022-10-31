@@ -34,7 +34,7 @@ body {
 
 .tabla {
   font-size: 25px;
-  border-color: #3dff00;
+  border-color: var(--primaryFontColor);
   border: solid 1px;
   width: 100%;
 }

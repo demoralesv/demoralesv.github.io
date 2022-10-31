@@ -75,6 +75,11 @@ const displayOptiontsMenu = (option) => {
       document.getElementById("page2").style.display = "block";
       page = 1;
     }
+    if (["F", "f"].includes(option)) {
+      document.getElementById("page1").style.display = "none";
+      document.getElementById("page4").style.display = "block";
+      page = 4;
+    }
   }
   if (page === 1) {
     if (["M", "m"].includes(option)) {
