@@ -77,25 +77,28 @@ const displayOptiontsMenu = (option) => {
     }
     if (["F", "f"].includes(option)) {
       document.getElementById("page1").style.display = "none";
-      document.getElementById("page4").style.display = "block";
-      page = 4;
+      document.getElementById("page3").style.display = "block";
+      page = 3;
     }
   }
   if (page === 1) {
-    if (["M", "m"].includes(option)) {
-      document.getElementById("page2").style.display = "none";
-      document.getElementById("page1").style.display = "block";
-      page = 0;
-    }
+ 
     if (["N", "n"].includes(option) && tableTalk === 0) {
       document.getElementById("optionstable").innerHTML =
         "<p><-- [B]</p>" + "<p>Día 2</p>" + "<p>[N] --></p>";
       tableTalk = 1;
     }
+    if (["B", "b"].includes(option) && tableTalk === 1) {
+      document.getElementById("optionstable").innerHTML =
+        "<p><-- [B]</p>" + "<p>Día 1</p>" + "<p>[N] --></p>";
+      tableTalk = 0;
+    }
   }
-  if (["B", "b"].includes(option) && tableTalk === 1) {
-    document.getElementById("optionstable").innerHTML =
-      "<p><-- [B]</p>" + "<p>Día 1</p>" + "<p>[N] --></p>";
-    tableTalk = 0;
+ 
+  if (["M", "m"].includes(option)) {
+    document.getElementById("page2").style.display = "none";
+    document.getElementById("page3").style.display = "none";
+    document.getElementById("page1").style.display = "block";
+    page = 0;
   }
 };
