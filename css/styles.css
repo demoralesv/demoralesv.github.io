@@ -18,6 +18,9 @@ body {
   border-color: #c97b15;*/
 }
 
+p {
+  font-size: 25px
+}
 @font-face {
   font-family: "vt323regular";
   src: url("/vt323-regular-webfont.woff2") format("woff2"),
