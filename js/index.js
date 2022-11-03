@@ -163,8 +163,8 @@ const loadFAQ = () => {
         "el hacking desde un punto ético",
     },
     {
-      question: "¿¿¿Porque la gallina cruso la calle????",
-      answer: "NO lo se :(",
+      question: "¿Quién la organiza?",
+      answer: "El evento es organizado por la comunidad tica DC11506, una comunidad de expertos y entusiastas en seguridad informática, con un único objetivo en común: de hacer del conocimiento colectivo el pilar del grupo y sus eventos.",
     },
   ];
   document.getElementById("container-faq").innerHTML = "";
