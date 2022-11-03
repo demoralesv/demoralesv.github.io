@@ -75,8 +75,11 @@ const displayOptiontsMenu = (option) => {
     if (["A", "a"].includes(option)) {
       document.getElementById("page1").style.display = "none";
       document.getElementById("logo").style.display = "none";
-      document.getElementById("page2").style.display = "block"; 
+      document.getElementById("page2").style.display = "block";
+      document.getElementById("charla").style.display = "block";
+      document.getElementById("taller").style.display = "none";
       page = 1;
+      tipo_evento = 1;
     }
     if (["F", "f"].includes(option)) {
       document.getElementById("page1").style.display = "none";
@@ -93,7 +96,7 @@ const displayOptiontsMenu = (option) => {
   if (page === 1) {
     //tipo_evento 1 = Charla
     //tipo_evento 2 = Taller
-    if (["N", "n"].includes(option) && tableTalk === 0) {
+    /*if (["N", "n"].includes(option) && tableTalk === 0) {
       document.getElementById("optionstable").innerHTML =
         "<p><-- [B]</p>" + "<p>Día 2</p>" + "<p>[N] --></p>";
       tableTalk = 1;
@@ -102,12 +105,7 @@ const displayOptiontsMenu = (option) => {
       document.getElementById("optionstable").innerHTML =
         "<p><-- [B]</p>" + "<p>Día 1</p>" + "<p>[N] --></p>";
       tableTalk = 0;
-    }
-    if (["B", "b"].includes(option) && tableTalk === 1) {
-      document.getElementById("optionstable").innerHTML =
-        "<p><-- [B]</p>" + "<p>Día 1</p>" + "<p>[N] --></p>";
-      
-    }
+    }*/
     if (["T", "t"].includes(option)) {
       document.getElementById("charla").style.display = "none";
       document.getElementById("taller").style.display = "block";
@@ -119,9 +117,20 @@ const displayOptiontsMenu = (option) => {
       tipo_evento = 1;
     }
     if (["B", "b"].includes(option) && tipo_evento === 1) {
-      document.getElementById("optionstable").innerHTML =
-        "<p><-- [B]</p>" + "<p>Día 1</p>" + "<p>[N] --></p>";
-      
+      document.getElementById("ca").style.display = "none";
+      document.getElementById("cb").style.display = "block";
+    }
+    if (["A", "a"].includes(option) && tipo_evento === 1) {
+      document.getElementById("cb").style.display = "none";
+      document.getElementById("ca").style.display = "block";
+    }
+    if (["B", "b"].includes(option) && tipo_evento === 2) {
+      document.getElementById("ta").style.display = "none";
+      document.getElementById("tb").style.display = "block";
+    }
+    if (["A", "a"].includes(option) && tipo_evento === 2) {
+      document.getElementById("tb").style.display = "none";
+      document.getElementById("ta").style.display = "block";
     }
   }
   if (["H", "h"].includes(option)) {
