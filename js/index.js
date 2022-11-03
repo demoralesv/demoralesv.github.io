@@ -64,9 +64,9 @@ const enterCommand = (event) => {
 /*
 0 = menu
 1 = agenda
-2 = Contacto
-3 = Galeria
-4 = help
+2 = faq
+3 = help
+4 = patrocinadores
 */
 const displayOptiontsMenu = (option) => {
   if (page === 0) {
@@ -78,7 +78,13 @@ const displayOptiontsMenu = (option) => {
     if (["F", "f"].includes(option)) {
       document.getElementById("page1").style.display = "none";
       document.getElementById("page3").style.display = "block";
-      page = 3;
+      page = 2;
+    }
+    
+    if (["P", "p"].includes(option)) {
+      document.getElementById("page1").style.display = "none";
+      document.getElementById("page5").style.display = "block";
+      page = 4;
     }
   }
   if (page === 1) {
@@ -94,10 +100,17 @@ const displayOptiontsMenu = (option) => {
       tableTalk = 0;
     }
   }
- 
+  if (["H", "h"].includes(option)) {
+    document.getElementById("page1").style.display = "none";
+    document.getElementById("page2").style.display = "none";
+    document.getElementById("page3").style.display = "none"; 
+    document.getElementById("page4").style.display = "block";
+    page = 3;
+  }
   if (["M", "m"].includes(option)) {
     document.getElementById("page2").style.display = "none";
-    document.getElementById("page3").style.display = "none";
+    document.getElementById("page3").style.display = "none"; 
+    document.getElementById("page4").style.display = "none";
     document.getElementById("page1").style.display = "block";
     page = 0;
   }
