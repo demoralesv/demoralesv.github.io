@@ -72,7 +72,8 @@ const displayOptiontsMenu = (option) => {
   if (page === 0) {
     if (["A", "a"].includes(option)) {
       document.getElementById("page1").style.display = "none";
-      document.getElementById("page2").style.display = "block";
+      document.getElementById("logo").style.display = "none";
+      document.getElementById("page2").style.display = "block"; 
       page = 1;
     }
     if (["F", "f"].includes(option)) {
@@ -99,11 +100,20 @@ const displayOptiontsMenu = (option) => {
         "<p><-- [B]</p>" + "<p>Día 1</p>" + "<p>[N] --></p>";
       tableTalk = 0;
     }
+    if (["T", "t"].includes(option)) {
+      document.getElementById("charla").style.display = "none";
+      document.getElementById("taller").style.display = "block";
+    }
+    if (["C", "c"].includes(option)) {
+      document.getElementById("charla").style.display = "block";
+      document.getElementById("taller").style.display = "none";
+    }
   }
   if (["H", "h"].includes(option)) {
     document.getElementById("page1").style.display = "none";
     document.getElementById("page2").style.display = "none";
     document.getElementById("page3").style.display = "none"; 
+    document.getElementById("logo").style.display = "block";
     document.getElementById("page4").style.display = "block";
     page = 3;
   }
@@ -111,6 +121,7 @@ const displayOptiontsMenu = (option) => {
     document.getElementById("page2").style.display = "none";
     document.getElementById("page3").style.display = "none"; 
     document.getElementById("page4").style.display = "none";
+    document.getElementById("logo").style.display = "block";
     document.getElementById("page1").style.display = "block";
     page = 0;
   }

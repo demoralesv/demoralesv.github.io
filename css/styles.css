@@ -12,7 +12,7 @@ body {
   width: 90%;
   margin: 0 auto;
   min-width: 900px;
-  max-width: 1200px;
+  max-width: 1300px;
   /*border-style:dashed;
   border-width: thick;
   border-color: #c97b15;*/
@@ -75,6 +75,9 @@ p {
 }
 
 .option {
+  color: #c97b15;
+}
+.break{
   color: #c97b15;
 }
 .no-space {
