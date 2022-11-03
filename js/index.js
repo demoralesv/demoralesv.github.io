@@ -91,6 +91,8 @@ const displayOptiontsMenu = (option) => {
     }
   }
   if (page === 1) {
+    //tipo_evento 1 = Charla
+    //tipo_evento 2 = Taller
     if (["N", "n"].includes(option) && tableTalk === 0) {
       document.getElementById("optionstable").innerHTML =
         "<p><-- [B]</p>" + "<p>Día 2</p>" + "<p>[N] --></p>";
@@ -101,13 +103,25 @@ const displayOptiontsMenu = (option) => {
         "<p><-- [B]</p>" + "<p>Día 1</p>" + "<p>[N] --></p>";
       tableTalk = 0;
     }
+    if (["B", "b"].includes(option) && tableTalk === 1) {
+      document.getElementById("optionstable").innerHTML =
+        "<p><-- [B]</p>" + "<p>Día 1</p>" + "<p>[N] --></p>";
+      
+    }
     if (["T", "t"].includes(option)) {
       document.getElementById("charla").style.display = "none";
       document.getElementById("taller").style.display = "block";
+      tipo_evento = 2;
     }
     if (["C", "c"].includes(option)) {
       document.getElementById("charla").style.display = "block";
       document.getElementById("taller").style.display = "none";
+      tipo_evento = 1;
+    }
+    if (["B", "b"].includes(option) && tipo_evento === 1) {
+      document.getElementById("optionstable").innerHTML =
+        "<p><-- [B]</p>" + "<p>Día 1</p>" + "<p>[N] --></p>";
+      
     }
   }
   if (["H", "h"].includes(option)) {
