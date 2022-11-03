@@ -10,6 +10,8 @@ window.onload = async () => {
   form.addEventListener("focusout", (event) => {
     document.getElementById("options").focus();
   });
+
+  loadFAQ();
 };
 
 const preventFocus = (event) => {
@@ -80,7 +82,7 @@ const displayOptiontsMenu = (option) => {
       document.getElementById("page3").style.display = "block";
       page = 2;
     }
-    
+
     if (["P", "p"].includes(option)) {
       document.getElementById("page1").style.display = "none";
       document.getElementById("page5").style.display = "block";
@@ -88,7 +90,6 @@ const displayOptiontsMenu = (option) => {
     }
   }
   if (page === 1) {
- 
     if (["N", "n"].includes(option) && tableTalk === 0) {
       document.getElementById("optionstable").innerHTML =
         "<p><-- [B]</p>" + "<p>Día 2</p>" + "<p>[N] --></p>";
@@ -100,18 +101,41 @@ const displayOptiontsMenu = (option) => {
       tableTalk = 0;
     }
   }
-  if (["H", "h"].includes(option)) {
-    document.getElementById("page1").style.display = "none";
-    document.getElementById("page2").style.display = "none";
-    document.getElementById("page3").style.display = "none"; 
-    document.getElementById("page4").style.display = "block";
-    page = 3;
-  }
   if (["M", "m"].includes(option)) {
     document.getElementById("page2").style.display = "none";
-    document.getElementById("page3").style.display = "none"; 
+    document.getElementById("page3").style.display = "none";
     document.getElementById("page4").style.display = "none";
     document.getElementById("page1").style.display = "block";
     page = 0;
   }
+};
+
+const loadFAQ = () => {
+  const faqs = [
+    {
+      question: "¿Qué es PwnedCR?",
+      answer:
+        "PwnedCR es una conferencia enfocada en la aplicación de la" +
+        "seguridad informática y ethical hacking, el evento reúne a los" +
+        "mejores profesionales dedicados a temas diversos relacionados" +
+        "al resguardo de la información, el aseguramiento de las TICS y" +
+        "el hacking desde un punto ético",
+    },
+    {
+      question: "¿¿¿Porque la gallina cruso la calle????",
+      answer: "NO lo se :(",
+    },
+  ];
+  document.getElementById("container-faq").innerHTML = "";
+  faqs.forEach((faq) => {
+    document.getElementById("container-faq").innerHTML +=
+      "<div>" +
+      "<a class='faq-question'>" +
+      faq.question +
+      " </a>" +
+      "<p class='faq-answer'>" +
+      faq.answer +
+      "</p>" +
+      "</div>";
+  });
 };
