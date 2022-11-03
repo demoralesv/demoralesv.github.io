@@ -19,7 +19,7 @@ body {
 }
 
 p {
-  font-size: 25px
+  font-size: 25px;
 }
 @font-face {
   font-family: "vt323regular";
@@ -154,6 +154,11 @@ ul.myUL {
   display: none;
 }
 
+.menu-container {
+  display: flex;
+  justify-content: center;
+}
+
 /*------------mobile-----------------*/
 
 /* Extra small devices (phones, 600px and down) */
@@ -193,11 +198,11 @@ ul.myUL {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 }
-.faq-question{
- font-size: 25px;
- color: #c97b15;
+.faq-question {
+  font-size: 25px;
+  color: #c97b15;
 }
-.faq-answer{
+.faq-answer {
   font-size: 20px;
   color: #3dff00;
- }
+}
