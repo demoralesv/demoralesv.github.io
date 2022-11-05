@@ -207,6 +207,9 @@ footer i{
     position:unset;
     margin: 1spx;
   }
+  .subtitle{
+    font-size:40%;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
