@@ -190,7 +190,7 @@ footer i{
     max-width: 600px;
   }
   .text-logo {
-    font-size: 20%;
+    font-size: 22%;
     
   }
   .menu {
@@ -207,7 +207,13 @@ footer i{
     justify-content: center;
     position:unset;
     margin: 1spx;
+    
   }
+  /*.social_networks a{
+    border-style: solid;
+    border-width:medium;
+    border-color: black;
+  }*/
   .subtitle{
     font-size:40%;
   }
