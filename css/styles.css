@@ -55,6 +55,7 @@ p {
 }
 .sponsors a{
   width: 20%;
+  text-align: center;
 }
 
 .text-logo {
@@ -186,6 +187,7 @@ footer i{
 .abajo a{
   margin-left:5px;
 }
+
 /*------------mobile-----------------*/
 
 /* Extra small devices (phones, 600px and down) */
@@ -237,12 +239,12 @@ footer i{
     font-size: 20px;
   }
   .abajo a{
-  margin-left:0px;
+    margin-left:0px;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 200px) and (max-width:500px){
+@media only screen and (min-width: 600px){
   
 }
 
