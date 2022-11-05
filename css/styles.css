@@ -157,6 +157,7 @@ ul.myUL {
   border-width: thick;
   border-color: rgb(68, 65, 65)*/
   /*margin-right: 0.05em;*/
+  
 }
 footer i{
   color: white;
@@ -165,6 +166,7 @@ footer i{
   border: solid;
   border-width: 5px;
   border-color: rgb(68, 65, 65);
+  
 }
 .social_networks{
   /*! display: contents; */
@@ -217,7 +219,6 @@ footer i{
     /*display: flex;*/
     justify-content: center;
     position:unset;
-    margin: 1spx;
     
   }
   .footer-divisor-special {
@@ -249,8 +250,59 @@ footer i{
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px){
-  
+@media only screen and (min-width: 600px) and (max-width:850px){
+  body {
+    width: 100%;
+    margin: 0 auto;
+    min-width: 600px;
+    
+  }
+  .text-logo {
+    font-size: 50%;
+    
+  }
+  .menu {
+    text-align: start;
+  }
+  .menu p {
+    position: relative;
+    top: 10px;
+    left: 17%;
+    max-width: 300px;
+  }
+  .social_networks{
+    
+    /*display: flex;*/
+    justify-content: center;
+    position:unset;
+  }
+  .footer-divisor-special {
+    border: solid;
+    border-width: 5px;
+    border-color: rgb(68, 65, 65);
+  }
+  /*.social_networks a{
+    border-style: solid;
+    border-width:medium;
+    border-color: black;
+  }*/
+  .subtitle{
+    font-size:50%;
+  }
+  .date{
+    font-size: 25px;
+  }
+  .info{
+    font-size: 25px;
+  }
+  .abajo a{
+    margin-left:2px;
+  }
+  .sponsors a {
+    margin-top: -20px;
+    margin-bottom: -10px;
+  }
+}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
