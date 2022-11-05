@@ -178,7 +178,14 @@ footer i{
   display: flex;
   justify-content: center;
 }
-
+.abajo{
+  /*! display: flex; */
+  justify-content: unset;
+  /*! margin: 5p; */
+}
+.abajo a{
+  margin-left:5px;
+}
 /*------------mobile-----------------*/
 
 /* Extra small devices (phones, 600px and down) */
@@ -228,6 +235,9 @@ footer i{
   }
   .info{
     font-size: 20px;
+  }
+  .abajo a{
+  margin-left:0px;
   }
 }
 
