@@ -191,6 +191,7 @@ footer i{
   }
   .text-logo {
     font-size: 20%;
+    text-align: unset;
   }
   .menu {
     text-align: start;
@@ -210,6 +211,7 @@ footer i{
   .subtitle{
     font-size:40%;
   }
+  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
