@@ -203,7 +203,7 @@ footer i{
     max-width: 300px;
   }
   .social_networks{
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
     position:unset;
     margin: 1spx;
