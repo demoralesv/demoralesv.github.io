@@ -203,11 +203,17 @@ footer i{
     max-width: 300px;
   }
   .social_networks{
+    
     /*display: flex;*/
     justify-content: center;
     position:unset;
     margin: 1spx;
     
+  }
+  .footer-divisor-special {
+    border: solid;
+    border-width: 5px;
+    border-color: rgb(68, 65, 65);
   }
   /*.social_networks a{
     border-style: solid;
