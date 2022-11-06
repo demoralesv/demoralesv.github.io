@@ -38,9 +38,10 @@ p {
 .tabla {
   font-size: 25px;
   border-color: var(--primaryFontColor);
-  border: solid 1px;
+  border: dashed 2px;
   width: 100%;
 }
+
 
 .info {
   text-align: left;
@@ -58,6 +59,19 @@ p {
   text-align: center;
   
 }
+.micit{
+  text-align: center;
+  justify-content: center;
+  background-color: #8f8d8d;
+  
+}
+.micit span{
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 25%;
+  margin-left: auto;
+  
+}
 .logos-sponsors a{
   
 }
@@ -66,7 +80,14 @@ p {
   font-size: 30px
 }
 .gold-sponsors{
-  font-size: 30px
+  width: 20%;
+}
+.tabla-sponsors{
+  font-size: 25px;
+  border-color: var(--primaryFontColor);
+  border: dashed 2px;
+  width: 100%;
+  text-align: center;
 }
 
 .text-logo {
@@ -104,6 +125,11 @@ p {
 .no-space {
   margin: 0;
   padding: 0;
+}
+.no-space-2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1%;
 }
 
 .options-table {

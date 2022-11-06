@@ -25,7 +25,7 @@ const enterCommand = (event) => {
     command.push(document.getElementById("options").value);
     displayOptiontsMenu(document.getElementById("options").value);
     document.getElementById("options").value = "";
-    if (command?.length == 3) {
+    if (command?.length == 2) {
       command.shift();
     }
     document.getElementById("container-commands").innerHTML = "";
@@ -90,7 +90,12 @@ const displayOptiontsMenu = (option) => {
     if (["P", "p"].includes(option)) {
       document.getElementById("page1").style.display = "none";
       document.getElementById("page5").style.display = "block";
+      document.getElementById("upper-sponsors").style.display = "none";
+      /*document.getElementById("invitation").style.display = "flex";*/
       page = 4;
+    }
+    if(["exit","EXIT","Exit"].includes(option)){
+      window.close();
     }
   }
   if (page === 1) {
@@ -138,6 +143,7 @@ const displayOptiontsMenu = (option) => {
     document.getElementById("page2").style.display = "none";
     document.getElementById("page3").style.display = "none"; 
     document.getElementById("page5").style.display = "none";
+    document.getElementById("invitation").style.display = "none";
     document.getElementById("logo").style.display = "block";
     document.getElementById("page4").style.display = "block";
     page = 3;
@@ -147,6 +153,7 @@ const displayOptiontsMenu = (option) => {
     document.getElementById("page3").style.display = "none";
     document.getElementById("page4").style.display = "none";
     document.getElementById("page5").style.display = "none";
+    document.getElementById("invitation").style.display = "none";
     document.getElementById("logo").style.display = "block";
     document.getElementById("page1").style.display = "block";
     page = 0;
