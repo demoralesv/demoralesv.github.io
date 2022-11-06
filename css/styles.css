@@ -58,6 +58,16 @@ p {
   text-align: center;
   
 }
+.logos-sponsors a{
+  
+}
+.text-sponsors{
+  text-align: center;
+  font-size: 30px
+}
+.gold-sponsors{
+  font-size: 30px
+}
 
 .text-logo {
   color: var(--primaryFontColor);

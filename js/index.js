@@ -137,6 +137,7 @@ const displayOptiontsMenu = (option) => {
     document.getElementById("page1").style.display = "none";
     document.getElementById("page2").style.display = "none";
     document.getElementById("page3").style.display = "none"; 
+    document.getElementById("page5").style.display = "none";
     document.getElementById("logo").style.display = "block";
     document.getElementById("page4").style.display = "block";
     page = 3;
@@ -145,6 +146,7 @@ const displayOptiontsMenu = (option) => {
     document.getElementById("page2").style.display = "none";
     document.getElementById("page3").style.display = "none";
     document.getElementById("page4").style.display = "none";
+    document.getElementById("page5").style.display = "none";
     document.getElementById("logo").style.display = "block";
     document.getElementById("page1").style.display = "block";
     page = 0;
