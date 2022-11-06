@@ -83,7 +83,7 @@ p {
   width: 20%;
 }
 .tabla-sponsors{
-  font-size: 25px;
+  font-size: 50%;
   border-color: var(--primaryFontColor);
   border: dashed 2px;
   width: 100%;
@@ -102,10 +102,15 @@ p {
 .subtitle {
   font-family: "vt323regular";
   color: #bbbbbb;
-  top: 5px;
+
   text-align: center;
 }
-
+.subtitle-tabla{
+  font-family: "vt323regular";
+  color: #bbbbbb;
+  text-align: center;
+  
+}
 .menu {
   font-family: inherit;
   font-size: 25px;
@@ -283,6 +288,12 @@ footer i{
     margin-top: -30px;
     margin-bottom: -10px;
   }
+  .tabla-sponsors{
+    font-size: 65%;
+  }
+  .subtitle-tabla{
+    font-size: 65%;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -294,7 +305,7 @@ footer i{
     
   }
   .text-logo {
-    font-size: 50%;
+    font-size: 40%;
     
   }
   .menu {
@@ -338,6 +349,9 @@ footer i{
     margin-top: -20px;
     margin-bottom: -10px;
   
+  }
+  .tabla-sponsors{
+    font-size: 75%;
   }
 }
 

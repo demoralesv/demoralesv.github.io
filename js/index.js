@@ -95,7 +95,6 @@ const displayOptiontsMenu = (option) => {
       page = 4;
     }
     if(["exit","EXIT","Exit"].includes(option)){
-      window.open("", "_blank", "");
       window.close();
     }
   }
