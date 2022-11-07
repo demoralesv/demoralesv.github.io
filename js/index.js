@@ -90,7 +90,7 @@ const displayOptiontsMenu = (option) => {
     if (["P", "p"].includes(option)) {
       document.getElementById("page1").style.display = "none";
       document.getElementById("page5").style.display = "block";
-      document.getElementById("upper-sponsors").style.display = "none";
+      
       /*document.getElementById("invitation").style.display = "flex";*/
       page = 4;
     }
