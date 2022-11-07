@@ -53,27 +53,26 @@ p {
   display: flex;
   justify-content: center;
   background-color: #8f8d8d;
+  
 }
-.sponsors a{
+.sponsors a {
+  display: flex;
   width: 20%;
   text-align: center;
-  
-}
-.micit{
-  text-align: center;
-  justify-content: center;
-  background-color: #8f8d8d;
-  
-}
-.micit span{
   margin-top: auto;
   margin-bottom: auto;
-  font-size: 25%;
-  margin-left: auto;
-  
 }
-.logos-sponsors a{
+.sponsors img{
+  margin-left:auto;
+  margin-right: auto;
+}
+.sponsors span{
+  display: flex;
+  font-size: 60%;
+  margin-top: auto;
+  margin-bottom: auto;
   
+  color:aliceblue;
 }
 .text-sponsors{
   text-align: center;
@@ -293,6 +292,20 @@ footer i{
   }
   .subtitle-tabla{
     font-size: 65%;
+  }
+  .sponsors a {
+  display: flex;
+  width: 10%;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  }
+  .sponsors span{
+    display: flex;
+    font-size: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    color:aliceblue;
   }
 }
 
