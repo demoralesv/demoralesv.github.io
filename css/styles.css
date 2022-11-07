@@ -21,6 +21,9 @@ body {
 p {
   font-size: 25px;
 }
+a {
+  color: #c97b15;
+}
 @font-face {
   font-family: "vt323regular";
   src: url("/vt323-regular-webfont.woff2") format("woff2"),
@@ -68,10 +71,10 @@ p {
 }
 .sponsors span{
   display: flex;
-  font-size: 60%;
+  font-size: 20px;
   margin-top: auto;
   margin-bottom: auto;
-  
+  margin-left: 3px;
   color:aliceblue;
 }
 .text-sponsors{
@@ -293,6 +296,7 @@ footer i{
   .subtitle-tabla{
     font-size: 65%;
   }
+  
   .sponsors a {
   display: flex;
   width: 10%;
@@ -302,7 +306,6 @@ footer i{
   }
   .sponsors span{
     display: flex;
-    font-size: 50%;
     margin-top: auto;
     margin-bottom: auto;
     color:aliceblue;

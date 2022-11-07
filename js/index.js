@@ -25,7 +25,7 @@ const enterCommand = (event) => {
     command.push(document.getElementById("options").value);
     displayOptiontsMenu(document.getElementById("options").value);
     document.getElementById("options").value = "";
-    if (command?.length == 2) {
+    if (command?.length == 1) {
       command.shift();
     }
     document.getElementById("container-commands").innerHTML = "";
@@ -172,6 +172,18 @@ const loadFAQ = () => {
     {
       question: "¿Quién la organiza?",
       answer: "El evento es organizado por la comunidad tica DC11506, una comunidad de expertos y entusiastas en seguridad informática, con un único objetivo en común: de hacer del conocimiento colectivo el pilar del grupo y sus eventos.",
+    },
+    {
+      question: "¿Cuál es el costo?",
+      answer: "PwnedCR es un evento de la comunidad y para la comunidad, por lo que es 100% gratis! ",
+    },
+    {
+      question: "¿Adónde me registro?",
+      answer: "Realizar el registro" + " <a href='https://www.eventbrite.com/e/pwnedcr-0x5-2022-costa-rica-tickets-461976071867' target='_blank'> aquí</a> ",
+    },
+    {
+      question: "¿Adónde puedo obtener mas información? ",
+      answer: "Puedes unirte a nuestro servidor de" + " <a href='https://discord.gg/caGKnVbx' target='_blank'> Discord</a> ",
     },
   ];
   document.getElementById("container-faq").innerHTML = "";
