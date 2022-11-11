@@ -310,6 +310,10 @@ footer i{
     margin-bottom: auto;
     color:aliceblue;
   }
+  #upper-sponsors{
+    display: none;
+
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -368,6 +372,10 @@ footer i{
   }
   .tabla-sponsors{
     font-size: 75%;
+  }
+  #upper-sponsors{
+    display: none;
+
   }
 }
 
