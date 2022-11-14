@@ -115,14 +115,6 @@ a {
   width: 100%;
   text-align: center;
 }
-.tabla-invita{
-  font-size: 50%;
-  border-color: var(--primaryFontColor);
-  border: dashed 2px;
-  width: 100%;
-  text-align: center;
-
-}
 
 .text-logo {
   color: var(--primaryFontColor);
@@ -202,8 +194,6 @@ a {
 .command {
   font-size: 25px;
   font-family: inherit;
-  margin-top: unset;
-  padding-top: unset;
 }
 
 div.container {
