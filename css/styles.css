@@ -36,7 +36,6 @@ a {
   color: var(--primaryFontColor);
   text-align: right;
   font-size: 25px;
-  
 }
 
 .tabla {
@@ -45,35 +44,12 @@ a {
   border: dashed 2px;
   width: 100%;
 }
-.header{
-  display: table;
-  width: 100%;
-  font-size: 25px;
-  margin: 10px;
-}
-.header a{
-  text-decoration-line: none;
-}
+
 
 .info {
+  text-align: left;
   font-size: 25px;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-.col1{
-  display: table-cell;
-  width: 33%;
-  text-align: center;
-}
-.col2{
-  display: table-cell;
-  width:33%;
-  text-align: center;
-}
-.col3{
-  width:33%;
-  display: table-cell;
-  text-align: center;
+  float: left;
 }
 
 .sponsors{
