@@ -35,6 +35,8 @@ a {
 .date {
   color: var(--primaryFontColor);
   text-align: right;
+  font-size: 25px;
+  
 }
 
 .tabla {
@@ -54,6 +56,7 @@ a {
 }
 
 .info {
+  font-size: 25px;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -308,7 +311,12 @@ footer i{
   .subtitle{
     font-size:40%;
   }
-  
+  .date{
+    font-size: 20px;
+  }
+  .info{
+    font-size: 20px;
+  }
   .abajo a{
     margin-left:0px;
   }
@@ -340,10 +348,6 @@ footer i{
     display: none;
 
   }
-  .header{
-    font-size: 20px;
-  }
-  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -386,8 +390,11 @@ footer i{
   .subtitle{
     font-size:50%;
   }
-  .header{
-    font-size: 20px;
+  .date{
+    font-size: 25px;
+  }
+  .info{
+    font-size: 25px;
   }
   .abajo a{
     margin-left:2px;
