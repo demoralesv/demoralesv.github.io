@@ -78,21 +78,18 @@ const displayOptiontsMenu = (option) => {
       document.getElementById("page2").style.display = "block";
       document.getElementById("charla").style.display = "block";
       document.getElementById("taller").style.display = "none";
-      document.getElementById("upper-sponsors").style.display = "flex";
       page = 1;
       tipo_evento = 1;
     }
     if (["F", "f"].includes(option)) {
       document.getElementById("page1").style.display = "none";
       document.getElementById("page3").style.display = "block";
-      document.getElementById("upper-sponsors").style.display = "flex";
       page = 2;
     }
 
     if (["P", "p"].includes(option)) {
       document.getElementById("page1").style.display = "none";
       document.getElementById("page5").style.display = "block";
-      document.getElementById("upper-sponsors").style.display = "none";
       
       /*document.getElementById("invitation").style.display = "flex";*/
       page = 4;
@@ -148,7 +145,6 @@ const displayOptiontsMenu = (option) => {
     document.getElementById("page5").style.display = "none";
     document.getElementById("logo").style.display = "block";
     document.getElementById("page4").style.display = "block";
-    document.getElementById("upper-sponsors").style.display = "flex";
     page = 3;
   }
   if (["M", "m"].includes(option)) {
@@ -158,7 +154,6 @@ const displayOptiontsMenu = (option) => {
     document.getElementById("page5").style.display = "none";
     document.getElementById("logo").style.display = "block";
     document.getElementById("page1").style.display = "block";
-    document.getElementById("upper-sponsors").style.display = "flex";
     page = 0;
   }
 };

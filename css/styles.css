@@ -35,6 +35,7 @@ a {
 .date {
   color: var(--primaryFontColor);
   text-align: right;
+  font-size: 25px;
 }
 
 .tabla {
@@ -43,34 +44,12 @@ a {
   border: dashed 2px;
   width: 100%;
 }
-.header{
-  display: table;
-  width: 100%;
-  font-size: 25px;
-  margin: 10px;
-}
-.header a{
-  text-decoration-line: none;
-}
+
 
 .info {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-.col1{
-  display: table-cell;
-  width: 33%;
-  text-align: center;
-}
-.col2{
-  display: table-cell;
-  width:33%;
-  text-align: center;
-}
-.col3{
-  width:33%;
-  display: table-cell;
-  text-align: center;
+  text-align: left;
+  font-size: 25px;
+  float: left;
 }
 
 .sponsors{
@@ -112,20 +91,7 @@ a {
   width: 100%;
   text-align: center;
 }
-.tabla-invita{
-  font-size: 50%;
-  border-color: var(--primaryFontColor);
-  border: dashed 2px;
-  width: 100%;
-  text-align: center;
-}
-.texto-invita{
-  font-size: 25px;
-}
-.imagen-invita{
-  margin-top: 10px;
-  width: 90px;
-}
+
 .text-logo {
   color: var(--primaryFontColor);
   text-align: center;
@@ -204,8 +170,6 @@ a {
 .command {
   font-size: 25px;
   font-family: inherit;
-  margin-top: unset;
-  padding-top: unset;
 }
 
 div.container {
@@ -313,7 +277,12 @@ footer i{
   .subtitle{
     font-size:40%;
   }
-  
+  .date{
+    font-size: 20px;
+  }
+  .info{
+    font-size: 20px;
+  }
   .abajo a{
     margin-left:0px;
   }
@@ -344,15 +313,6 @@ footer i{
   #upper-sponsors{
     display: none;
 
-  }
-  .header{
-    font-size: 20px;
-  }
-  .texto-invita{
-    font-size: 15px;
-  }
-  .imagen-invita{ 
-    width: 60px;
   }
 }
 
@@ -396,8 +356,11 @@ footer i{
   .subtitle{
     font-size:50%;
   }
-  .header{
-    font-size: 20px;
+  .date{
+    font-size: 25px;
+  }
+  .info{
+    font-size: 25px;
   }
   .abajo a{
     margin-left:2px;
@@ -412,12 +375,7 @@ footer i{
   }
   #upper-sponsors{
     display: none;
-  }
-  .texto-invita{
-    font-size: 20px;
-  }
-  .imagen-invita{ 
-    width: 80px;
+
   }
 }
 
