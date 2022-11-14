@@ -119,8 +119,12 @@ a {
   width: 100%;
   text-align: center;
 }
+.texto-invita{
+  font-size: 25px;
+}
 .imagen-invita{
   margin-top: 10px;
+  width: 90px;
 }
 .text-logo {
   color: var(--primaryFontColor);
@@ -344,7 +348,12 @@ footer i{
   .header{
     font-size: 20px;
   }
-  
+  .texto-invita{
+    font-size: 15px;
+  }
+  .imagen-invita{ 
+    width: 60px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -403,7 +412,12 @@ footer i{
   }
   #upper-sponsors{
     display: none;
-
+  }
+  .texto-invita{
+    font-size: 20px;
+  }
+  .imagen-invita{ 
+    width: 80px;
   }
 }
 
