@@ -118,10 +118,9 @@ a {
   border: dashed 2px;
   width: 100%;
   text-align: center;
+
 }
-.imagen-invita{
-  margin-top: 10px;
-}
+
 .text-logo {
   color: var(--primaryFontColor);
   text-align: center;
